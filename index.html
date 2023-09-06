@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+        rel="stylesheet"
+    />
+    <meta name="description" content="Sirachat's Project website" />
+    <meta name="keywords" content="html, css, js" />
+    <title>Fundcom Project</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#article">Article</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="header__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__references btn" href="#references">References</a>
+          </li>
+        </ul>
+        <button aria-label="mobile nav button" class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#article">Article</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button
+              aria-label="theme-toggle btn"
+              id="theme-toggle"
+              class="mobile-nav__sun"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#references">References</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="mek container">
+        <img class="mek__image" src="/mek2.jpg" alt="Profile 
+        picture" />
+        <!-- <h2 class="mek__subtitle">Greetings</h2> -->
+        <h1 class="mek__title">SIRACHAT WANBURI<br/>6604062663302</h1>
+        <p class="mek__description">Introduce about myself</p>
+        <!-- <a class="mek__btn btn" href="https://www.youtube.com/embed/jOTfBlKSQYY" target="_blank">Introduce about myself -->
+        <iframe style="margin-right: 50%; margin-left: 50%;" width="700vh" height="520vw" src="https://www.youtube.com/embed/-EKHMBCBJSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">My name is Sirachat Wanburi, but you can call me Mek, which means<strong>"cloud"</strong> in English. I am 18 years old.</p>
+          <p class="about__description">I live in Bangkok. I graduated from <a>Rajavinit Mathayom School</a> with a major in computer science.</br>My favorite hobby is reading novels and listening to music.</p>
+          <p class="about__description">I am a computer science student at <a>KMUTNB</a>. My future goal is to work as a <a>developer</a>. However,
+          I am considering starting off as a <a>QA</a> or <a>Tester</a> to hone my talents and skills in backend development.
+          </p>
+          <p class="about__description">
+          If the opportunity arises, I am also interested in creating my own game.
+          Unfortunately, the game development industry in Thailand is relatively limited, prompting me to explore opportunities abroad.
+          </p>
+          <hr class="about__hr">
+          <h3 class="about_subtitle">Skills</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">Python</li>
+              <li class="about__list">C</li>
+              <li class="about__list">LUA</li>
+              <li class="about__list">AND OTHERS SOFT SKILLS LIKE PS, FIGMA</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">CSS</li>
+              <li class="about__list">HTML</li>
+              <li class="about__list">JS (little)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img 
+           loading="lazy"
+           class="about__img" 
+           src="/allmek.png" 
+           alt="Profile picture" 
+          />
+        </div>
+      </section> 
+      <section id="article" class="article container section">
+        <h3 class="article__title">Article about VR</h3>
+        <p class="article__description">
+          Virtual Reality (VR) is a technology that simulates a computer-generated environment and makes it possible to interact with it in a very realistic way. 
+          It has become increasingly popular in recent years, with applications in fields such as gaming, education, healthcare, and entertainment. 
+          But what is VR and how can it be applied in production, healthcare and education?
+        </p>
+        <div class="article__container">
+          <!-- Article 1 -->
+          <!-- <h2 class="article__project-title">The history of VR</h2> -->
+          <div class="article__img-wrapper article__image1">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/a1.jpg"
+              alt="VR1"
+            />
+          </div>
+          <div class="article__project article__content1">
+            <h2 class="work__project-subtitle">The history of VR</h2>
+            <li class="article__project-description1">
+              The first commercial VR headset was the EyePhone, released in 1992. However, it was not very successful due to its high price and limited functionality.
+            </li>
+              <li class="article__project-description1">
+                In the 2000s, VR experienced a resurgence of interest with the development of more powerful computers and better HMDs. In 2012, Oculus Rift was released, which is considered to be one of the first modern VR headsets.
+              </li>
+                <li class="article__project-description1">
+                  Since then, VR has continued to grow in popularity, and there are now a number of different VR headsets available on the market. VR is being used for a variety of purposes, including gaming, education, training, and healthcare.
+                </li>
+            </p>
+          </div>
+          <!-- Article 2 -->
+          <!-- <h2 class="article__project-title">The Different Types of VR</h2> -->
+          <div class="article__img-wrapper article__image2">
+            <img 
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/a2.jpg" 
+              alt="VR2"
+            />
+          </div>
+          <div class="article__project article__content2">
+            <h2 class="work__project-subtitle">The Different Types of VR</h2>
+            <li class="article__project-description1">
+              Head-mounted displays (HMDs): HMDs are the most common type of VR. They are worn on the head and display images in front of the user's eyes.
+            </li>
+              <li class="article__project-description1">
+                CAVE systems: CAVE systems are immersive environments that use multiple projectors to create a 3D image on a wall or other surface.
+              </li>
+                <li class="article__project-description1">
+                  Augmented reality (AR): AR overlays digital information onto the real world. It can be used to create interactive experiences or to provide information about the environment.
+                </li>
+                  <li class="article__project-description1">
+                    Mixed reality (MR): MR is a combination of VR and AR. It allows users to interact with both digital and physical objects.                    
+                  </li>
+          </div>
+          <!-- Article 3 -->
+          <!-- <h2 class="article__project-title">The Benefits of VR</h2> -->
+          <div class="article__img-wrapper article__image3">
+            <img 
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/a3.png" 
+              alt="VR3"
+            />
+          </div>
+          <div class="article__project article__content3">
+            <h2 class="work__project-subtitle">The Benefits of VR</h2>
+            <li class="article__project-description1">
+              Gaming: VR can be used to create games that feel more real and immersive.
+            </li>
+              <li class="article__project-description1">
+                Education: VR can be used to simulate real-world environments and situations, which can help students learn more effectively.
+              </li>
+                <li class="article__project-description1">
+                  Training: VR can be used to provide realistic and safe training for dangerous or expensive tasks.
+                </li>
+                  <li class="article__project-description1">
+                    Healthcare: VR can be used to treat phobias and anxiety disorders by exposing patients to a virtual environment that triggers their fear or anxiety in a safe and controlled setting.
+                  </li>
+                    <li class="article__project-description1">
+                        Etc. like communication, design
+                    </li>
+          </div>
+          <!-- Article 4 -->
+          <!-- <h2 class="article__project-title">The limitations of VR technology</h2> -->
+          <div class="article__img-wrapper article__image4">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/a4.jpg" 
+              alt="VR4"
+            />
+          </div>
+          <div class="article__project article__content4">
+            <h2 class="work__project-subtitle">The limitations of VR technology</h2>
+            <li class="article__project-description1">
+              Hardware requirements: VR headsets require powerful hardware, which can make them expensive and limit their availability.
+            </li>
+              <li class="article__project-description1">
+                Content: There is still a limited amount of high-quality VR content available.
+              </li>
+                <li class="article__project-description1">
+                  Motion sickness: Some people experience motion sickness when using VR.
+                </li>
+          </div>
+          <!-- Article 5 -->
+          <!-- <h2 class="article__project-title">The Future of VR</h2> -->
+          <div class="article__img-wrapper article__image5">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/a5.jpg" 
+              alt="VR5"
+            />
+          </div>
+          <div class="article__project article__content5">
+            <h2 class="work__project-subtitle">The Future of VR</h2>
+            <li class="article__project-description1">
+              VR is a promising technology with the potential to revolutionize the way we interact with the world around us.
+            </li>
+              <li class="article__project-description1">
+                It is still in its early stages, but it is growing rapidly and has the potential to have a major impact on many industries.
+              </li> 
+                <li class="article__project-description1">
+                  As the technology continues to develop and the cost of VR headsets comes down, we can expect to see VR become more mainstream and have a major impact on many industries.
+                </li>
+          </div>
+          <!-- Article 6 -->
+          <!-- <h2 class="article__project-title">Conclusion</h2> -->
+          <div class="article__img-wrapper article__image6">
+            <img 
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/a6.jpg" 
+              alt="VR5"
+            />
+           </div>
+           <div class="article__project article__content6">
+             <h2 class="work__project-subtitle">Conclusion</h2>
+             <li class="article__project-description1">
+                Virtual reality is a powerful technology with the potential to change the way we live and work.
+              </li>
+                <li class="article__project-description1">
+                  It is still in its early stages, but it is growing rapidly and has the potential to have a major impact on many industries.
+                </li>
+                  <li class="article__project-description1">
+                    As the technology continues to develop, we can expect to see VR become more mainstream and have a profound impact on our world.
+                  </li>
+             </li>
+           </div>                           
+      </section> 
+        <section clasee="featured container section">
+          <h3 class="featured__subtitle"></h3>
+          <div class="featured__wrapper"> 
+          <h2 class="featured__title">References</h2>
+          <!-- <a
+            aria-label="link featured projects"
+            class="featured__link"
+            href="#"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a> -->
+      </div>
+        <!-- <p class="featured__description">References</p> -->
+        <div id="references" class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Lists</h3>
+            <ul class="featured__references">
+              <li class="featured__info" href="#">Fontshare</li>
+              <li class="featured__info">Vite</li>
+              <li class="featured__info">Tailwindcss</li>
+              <li class="featured__info">W3school</li>
+              <li class="featured__info">Heroicon</li>
+              <li class="featured__info">Pinterest</li>
+              <li class="featured__info">Slaying The Dragon</li>
+              <li class="featured__info">Github</li>
+              <li class="featured__info">Vercel</li>
+              <li class="featured__info">Bard AI</li>
+              <li class="featured__info">
+                <a href="https://www.britannica.com/technology/virtual-reality/Living-in-virtual-worlds" target="_blank">
+                  Britannica
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Used for</h3>
+            <p class="featured__info">Search, bring font to decorate.</p>
+            <p class="featured__info">Setup project for react.</p>
+            <p class="featured__info">Customizing colors.</p>
+            <p class="featured__info">Hex color converter.</p>
+            <p class="featured__info">Copyrighted free icons.</p>
+            <p class="featured__info">Images thumbnails.</p>
+            <p class="featured__info">Inspiration and References on create this website project.</p>
+            <p class="featured__info">Searching inspiration and debugging.</p>
+            <p class="featured__info">Deploy website.</p>
+            <p class="featured__info">Compile articles and check grammar.</p>
+            <p class="featured__info">References about article</p>
+          </div>
+          <!-- <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">Test</p>
+          </div> -->
+        </div>
+        <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r1.png"
+              alt="References font" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r2.png" 
+              alt="References vite" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r3.png" 
+              alt="References tailwindcss" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r4.png" 
+              alt="References color converter" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r5.png" 
+              alt="References icon" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r6.png" 
+              alt="References inspiration" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r8.png" 
+              alt="References inspiration" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r7.png" 
+              alt="References inspiration" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r9.png" 
+              alt="References inspiration" />
+          </div>
+          <div class="featured__img-wrapper">
+            <img 
+              loading="lazy"
+              class="lazy loading"
+              src="https://via.placeholder.com/900"
+              data-src="/r10.png" 
+              alt="References inspiration" />
+          </div>
+      </div>
+    </section>
+
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get in contact</h2>
+        <p class="contact__description">
+          Basically, you can contact me through these below.
+        </p>
+        <a
+          class="contact__btn btn"
+          href="https://linktr.ee/sirachatw"
+          target="_blank"
+          >Linktree</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Thanks for watching ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
